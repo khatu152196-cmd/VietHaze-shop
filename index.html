@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VietHaze – Sáp nước hoa 3 miền</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Lobster&family=Noto+Serif:ital,wght@0,500;1,500&family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+<style>
+:root{--g1:#266438;--g2:#86C374;--g3:#93D17E;--cream:#f6efe0;--rust:#842E06;--honey:#FAD343;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--g1) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cg fill='%23EED279' fill-opacity='.11'%3E%3Cpath transform='translate(30 50) rotate(35)' d='M0 0C12-16 34-16 46 0 34 16 12 16 0 0Z'/%3E%3Cpath transform='translate(170 70) rotate(-50) scale(1.3)' d='M0 0C12-16 34-16 46 0 34 16 12 16 0 0Z'/%3E%3Cpath transform='translate(90 215) rotate(110) scale(.9)' d='M0 0C12-16 34-16 46 0 34 16 12 16 0 0Z'/%3E%3Cg transform='translate(200 200)'%3E%3Ccircle cy='-9' r='6'/%3E%3Ccircle cx='9' cy='-3' r='6'/%3E%3Ccircle cx='5' cy='8' r='6'/%3E%3Ccircle cx='-5' cy='8' r='6'/%3E%3Ccircle cx='-9' cy='-3' r='6'/%3E%3C/g%3E%3Cg transform='translate(60 135) scale(.7)'%3E%3Ccircle cy='-9' r='6'/%3E%3Ccircle cx='9' cy='-3' r='6'/%3E%3Ccircle cx='5' cy='8' r='6'/%3E%3Ccircle cx='-5' cy='8' r='6'/%3E%3Ccircle cx='-9' cy='-3' r='6'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");color:var(--cream);font:300 16px/1.7 'Bricolage Grotesque',system-ui,sans-serif}
+h1,h2,h3,.logo{font-family:'Bricolage Grotesque',Georgia,serif;font-weight:600;line-height:1.2;margin:0 0 .5em}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(38,100,56,.93);backdrop-filter:blur(8px);border-bottom:1px solid rgba(250,211,67,.25)}
+nav{max-width:1100px;margin:auto;display:flex;align-items:center;gap:18px;padding:10px 18px;flex-wrap:wrap}
+.logo{font-size:28px;color:var(--cream);margin:0 auto 0 0}.logo b{color:var(--cream);font-weight:600}
+nav a.l{font-size:14px;opacity:.85}nav a.l:hover{color:var(--honey)}
+.cartb{background:var(--honey);color:var(--g1);border-radius:99px;padding:5px 14px;font-weight:600;font-size:14px}
+main{max-width:1100px;margin:auto;padding:24px 18px 70px;min-height:70vh}
+.hero{position:relative;text-align:center;padding:90px 10px;overflow:hidden;border-radius:28px;background:radial-gradient(ellipse at 30% 40%,#93D17E 0,transparent 45%),radial-gradient(ellipse at 70% 55%,#86C374 0,transparent 50%),radial-gradient(ellipse at 50% 80%,#266438 0,transparent 55%),#266438}
+.hero .big{font-family:'Bricolage Grotesque',serif;font-size:clamp(52px,13vw,128px);color:var(--rust);line-height:1;letter-spacing:-1px}
+.hero .big i{font-style:normal;color:var(--rust)}
+.hero p{max-width:560px;margin:14px auto 22px;color:#fff;font-size:18px}
+.btn{display:inline-block;border:0;cursor:pointer;background:var(--honey);color:var(--g1);padding:12px 26px;border-radius:99px;font:600 15px 'Bricolage Grotesque',sans-serif}
+.btn.o{background:none;border:1px solid var(--honey);color:var(--honey)}.btn:hover{filter:brightness(1.1)}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin:26px 0}
+.card{background:rgba(246,239,224,.12);border:1px solid rgba(246,239,224,.25);border-radius:20px;padding:24px;transition:.2s}
+a.card:hover{transform:translateY(-4px);border-color:var(--honey)}
+.card .code{font-size:13px;color:var(--honey);letter-spacing:2px}
+.card .t{font-family:'Bricolage Grotesque',serif;font-size:56px;color:var(--cream);line-height:1.1;margin-top:8px;margin-bottom:12px}
+.pill{display:inline-block;background:var(--rust);color:var(--cream);border-radius:99px;padding:2px 12px;font-size:12px}
+.sec{margin-top:54px}.sec h2{font-size:34px}
+.prod{display:grid;grid-template-columns:minmax(200px,340px) 1fr;gap:34px;align-items:start}
+@media(max-width:700px){.prod{grid-template-columns:1fr}.hero{padding:60px 8px}}
+.pic{background:var(--cream);border-radius:22px;padding:20px}.pic svg{width:100%;max-height:320px}
+table{width:100%;border-collapse:collapse;font-size:14.5px}td{padding:9px 6px;border-bottom:1px solid rgba(246,239,224,.14);vertical-align:top}td:first-child{color:var(--honey);width:38%}
+.scroll{overflow-x:auto}.price{font-size:28px;color:var(--honey);margin:6px 0 14px}
+input,select,textarea{width:100%;padding:10px 12px;margin:4px 0 12px;border-radius:10px;border:1px solid rgba(246,239,224,.3);background:rgba(0,0,0,.25);color:var(--cream);font:inherit}
+label{font-size:13px;opacity:.85}.qty button{width:30px;height:30px;border-radius:50%;border:1px solid var(--honey);background:none;color:var(--honey);cursor:pointer}
+.err{color:#ffb4a2}.ok{color:#9be7a8}.crumb{font-size:13px;opacity:.75;margin-bottom:14px}
+footer{text-align:center;padding:30px 18px;font-size:13px;opacity:.75;border-top:1px solid rgba(246,239,224,.15)}
+#cb{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30}
+#cb>button{width:56px;height:56px;border-radius:50%;border:0;background:var(--honey);font-size:26px;cursor:pointer}
+#cw{display:none;position:absolute;right:0;bottom:66px;width:min(340px,calc(100vw - 32px));background:var(--cream);color:#222;border-radius:18px;overflow:hidden;box-shadow:0 10px 40px #0008}
+#cw h4{margin:0;background:var(--rust);color:var(--cream);padding:12px 16px;font-weight:600}
+#cm{height:250px;overflow:auto;padding:12px;font-size:14px}#cm p{margin:0 0 8px;padding:8px 12px;border-radius:14px;max-width:88%}
+.bt{background:#e6dcc4}.us{background:var(--g2);color:#fff;margin-left:auto!important}
+#cq{display:flex;flex-wrap:wrap;gap:6px;padding:0 12px 8px}#cq span{background:#fff;border:1px solid var(--rust);color:var(--rust);border-radius:99px;padding:2px 10px;font-size:12px;cursor:pointer}
+#cw form{display:flex;border-top:1px solid #ccc}#cw input{margin:0;border:0;border-radius:0;background:#fff;color:#222}
+</style></head><body>
+<header><nav><a href="#home" class="logo">Viet<b>H</b>aze</a>
+<a class="l" href="#home">Trang chủ</a><a class="l" href="#about">Giới thiệu</a><a class="l" href="#shop">Sản phẩm</a><a class="l" href="#policy">Chính sách</a><a class="l" href="#orders">Nhật ký đơn</a>
+<a class="cartb" href="#cart">🛒 <span id="cc">0</span></a></nav></header>
+<main id="app"></main>
+<footer>© VietHaze – Sáp nước hoa thủ công · Gửi từ TP. Hồ Chí Minh · Website đồ án học tập (thanh toán ở chế độ sandbox)</footer>
+<div id="cb"><div id="cw"><h4>🐝 Trợ lý mùi hương VietHaze</h4><div id="cm"></div><div id="cq"></div><form onsubmit="return ask(event)"><input id="ci" placeholder="Nhập câu hỏi…" autocomplete="off"></form></div><button onclick="tg()" aria-label="Chat">💬</button></div>
+<script>
+const PRICE=89000;
+const T={bac:{code:'024',n:'ẨM',r:'Miền Bắc',d:'Mang theo hơi thở trầm mặc, tinh tế của đất Kinh Kỳ những ngày giao mùa: cái se lạnh đầu đông, mùi khói bếp ấm áp và nét thanh lịch, sâu lắng của người Hà Nội xưa.'},
+trung:{code:'0234',n:'ẠM',r:'Miền Trung',d:'Chắt lọc từ sự mộc mạc, kiên cường và sâu lắng của mảnh đất Cố đô đầy nắng gió – giao thoa giữa nét trầm tư cổ kính và sự an yên, vững chãi của núi rừng miền Trung.'},
+nam:{code:'028',n:'ÊM',r:'Miền Nam',d:'Phóng khoáng, ngọt ngào nhưng cũng đầy dịu dàng, bao dung như nhịp sống phương Nam. "ÊM" vỗ về tâm hồn bằng sự tươi mới, mộc mạc của miệt vườn sông nước.'}};
+const P=[
+{id:'024-que',t:'bac',s:'Quế',tag:'Ấm áp & Quyến rũ',c:'#a0522d',d:'Gói trọn cái tình nồng hậu của miền Bắc những ngày trở gió. Nốt hương quế chi ấm nồng hòa quyện cùng chút ngọt dịu của sáp ong tự nhiên, đánh thức mọi giác quan và sưởi ấm tâm hồn. Phù hợp cho những ngày mưa lạnh, những buổi hẹn hò tối hoặc khi bạn cần một mùi hương chững chạc, cuốn hút.'},
+{id:'024-nhai',t:'bac',s:'Nhài',tag:'Thanh khiết & Tinh tế',c:'#e9dfb8',d:'Như một sớm mai thức giấc bên hiên nhà cổ Hà Nội, nơi những đóa hoa nhài trắng muốt vừa hé nở trong sương. Mùi hương thuần khiết, nhẹ nhàng nhưng có độ lưu luyến sâu sắc, dành cho những tâm hồn yêu nét đẹp truyền thống, thanh lịch và bình yên.'},
+{id:'0234-tram',t:'trung',s:'Tràm Gió',tag:'An yên & Mộc mạc',c:'#5f8f5a',d:'Mang theo hơi thở của núi rừng và những ký ức tuổi thơ êm đềm xứ Huế. Tinh dầu tràm gió tự nhiên tạo nên một nốt hương thảo mộc thanh sạch, dễ chịu, giúp giải tỏa mệt mỏi tức thì và mang lại cảm giác an toàn, được che chở như vòng tay của người thân.'},
+{id:'0234-thong',t:'trung',s:'Gỗ Thông',tag:'Trầm tĩnh & Sâu lắng',c:'#3f6b4a',d:'Gợi nhắc những đồi thông xanh ngắt ẩn hiện trong làn sương mờ của đất Cố đô. Mùi gỗ thông mộc mạc, hơi se lạnh và trầm ấm mang đến sự tĩnh tại tuyệt đối cho tâm trí, lý tưởng cho những ai yêu phong cách tối giản, sâu sắc và gần gũi thiên nhiên.'},
+{id:'028-tao',t:'nam',s:'Táo',tag:'Tươi mới & Phóng khoáng',c:'#9acd32',d:'Đại diện cho nguồn năng lượng tích cực, trẻ trung và cởi mở của nhịp sống phương Nam. Hương táo xanh giòn tan, ngọt dịu nhẹ nhàng mang lại cảm giác sảng khoái, tươi tắn suốt cả ngày dài, giúp bạn xua tan sự ngột ngạt và luôn rạng rỡ.'},
+{id:'028-sen',t:'nam',s:'Hoa Sen',tag:'Dịu dàng & Thuần khiết',c:'#e8a0bf',d:'Chắt lọc tinh túy từ những đầm sen thanh tịnh của vùng sông nước Nam Bộ. Mùi hương hoa sen thoang thoảng, thanh cao và êm ái như một bản nhạc không lời, giúp cân bằng cảm xúc, mang lại sự thư thái và nét duyên dáng rất đỗi Việt Nam.'}];
+P.forEach(p=>{p.code=T[p.t].code;p.name=`[${p.code}] ${T[p.t].n} - Sáp nước hoa hương ${p.s}`});
+const $=s=>document.querySelector(s),money=n=>n.toLocaleString('vi-VN')+'đ';
+let cart={},orders=[];try{cart=JSON.parse(localStorage.getItem('vh_cart')||'{}');orders=JSON.parse(localStorage.getItem('vh_orders')||'[]')}catch(e){}
+const sv=()=>{try{localStorage.setItem('vh_cart',JSON.stringify(cart));localStorage.setItem('vh_orders',JSON.stringify(orders))}catch(e){}};
+const bottle = p => `<img src="images/${p.id}.jpg" alt="${p.name}" style="width:100%; height:auto; max-height:320px; object-fit:contain; border-radius:12px;">`;
+const pcard=p=>`<a class="card" href="#p-${p.id}"><div class="pic" style="padding:10px;margin-bottom:14px">${bottle(p)}</div><span class="pill">${T[p.t].r}</span><h3 style="margin-top:8px;font-size:20px">${p.name}</h3><div style="opacity:.8">${p.tag}</div><div style="color:var(--honey);margin-top:6px">${money(PRICE)}</div></a>`;
+const tcard=k=>`<a class="card" href="#${k}"><div class="code">MÃ VÙNG ${T[k].code} · ${T[k].r.toUpperCase()}</div><div class="t">${T[k].n}</div><p style="font-size:14px">${T[k].d.slice(0,95)}…</p><span class="btn o" style="padding:6px 16px">Xem 2 mùi hương →</span></a>`;
+const V={
+home:()=>`<section class="hero"><div class="big">Viet<i>H</i>aze</div><p>Mùi hương là đầu câu chuyện… Sáp nước hoa thủ công mang ký ức ba miền trở về trên làn da bạn.</p><a class="btn" href="#shop">Khám phá bộ sưu tập</a> <a class="btn o" style="background:#26643855;color:#fff;border-color:#fff" href="#about">Câu chuyện thương hiệu</a></section>
+<section class="sec"><h2>Đường dây ký ức 3 miền</h2><p style="max-width:760px">Giữa những bộn bề và áp lực nơi phố thị, hy vọng chút hương thơm mộc mạc từ VietHaze sẽ như một "cuộc gọi" đường dài, kết nối bạn trở về với những ký ức thân thương nhất của quê nhà. Lấy cảm hứng từ mã vùng điện thoại bàn của ba miền, mỗi thỏi sáp là một trạm dừng chân cảm xúc.</p><div class="grid">${Object.keys(T).map(tcard).join('')}</div></section>
+<section class="sec"><div class="grid">${[['🐝','Thủ công & Organic','Sáp ong, dầu dừa, vitamin E và tinh dầu nguyên chất. Không cồn, không chất bảo quản.'],['🤰','An toàn mọi đối tượng','Kể cả da nhạy cảm, mẹ bầu và mẹ bỉm sữa.'],['🎒','Nhỏ gọn 5g','Dạng thỏi vặn như thỏi son, bỏ túi mang đi mọi nơi.']].map(x=>`<div class="card"><div style="font-size:30px">${x[0]}</div><h3>${x[1]}</h3><p style="margin:0">${x[2]}</p></div>`).join('')}</div></section>`,
+about:()=>`<h1>Về thương hiệu VietHaze</h1><div class="card" style="max-width:820px"><p>VietHaze là thương hiệu hương thơm thủ công được sáng lập tại Việt Nam với số lượng sản xuất giới hạn nhằm đảm bảo chất lượng nguyên bản nhất trong từng mẻ sáp.</p><p>Bằng cách kể những câu chuyện văn hóa và ký ức vùng miền thông qua khứu giác, VietHaze mong muốn mỗi mùi hương khi chạm lên da sẽ là một sợi dây gắn kết vô hình, giúp bạn tìm thấy sự bình yên, tự hào và cảm giác thân thuộc như được trở về nhà.</p><p>Cần tư vấn mùi hương hợp cá tính? Hãy chat với trợ lý ở góc phải màn hình hoặc nhắn trực tiếp cho VietHaze.</p></div>`,
+shop:()=>`<h1>Sản phẩm</h1>${Object.keys(T).map(k=>`<div class="sec" style="margin-top:30px"><h2><a href="#${k}">[${T[k].code}] ${T[k].n}</a> <span class="pill">${T[k].r}</span></h2><div class="grid">${P.filter(p=>p.t==k).map(pcard).join('')}</div></div>`).join('')}`,
+theme:k=>`<div class="crumb"><a href="#shop">Sản phẩm</a> / ${T[k].n}</div><div class="card"><div class="code" style="color:var(--honey)">MÃ VÙNG ${T[k].code} · ${T[k].r.toUpperCase()}</div><h1 style="font-size:clamp(48px,10vw,90px);margin:0">${T[k].n}</h1><p style="max-width:720px;margin:0">${T[k].d}</p></div><div class="grid">${P.filter(p=>p.t==k).map(pcard).join('')}</div><div style="display:flex;gap:10px;flex-wrap:wrap">${Object.keys(T).filter(x=>x!=k).map(x=>`<a class="btn o" href="#${x}">Chủ đề ${T[x].n} (${T[x].code})</a>`).join('')}</div>`,
+prod:p=>{const rows=[['Kho','CÒN HÀNG'],['Thương hiệu','VietHaze'],['Kích cỡ','Size du lịch (nhỏ gọn, tiện mang theo)'],['Trọng lượng','5g / thỏi'],['Công thức','Dạng sáp (rắn)'],['Nồng độ hương','Eau De Parfum (EDP) – lưu hương dịu nhẹ 4–6 tiếng'],['Mùi hương','Hương '+p.s],['Giới tính','Unisex'],['Nhóm tuổi','Mọi lứa tuổi (an toàn cho mẹ bầu và mẹ bỉm sữa)'],['Loại phiên bản','Phiên bản giới hạn (thủ công, số lượng có hạn)'],['Kiểu đóng gói','Đơn (1 thỏi/hộp)'],['Hạn sử dụng','12 tháng kể từ ngày sản xuất (6 tháng sau khi mở nắp)'],['Xuất xứ','Việt Nam'],['Đơn vị sản xuất','Thương hiệu sáp nước hoa thủ công VietHaze'],['Gửi từ','Thành phố Hồ Chí Minh']];
+return `<div class="crumb"><a href="#shop">Sản phẩm</a> / <a href="#${p.t}">${T[p.t].n}</a> / ${p.s}</div><div class="prod"><div class="pic">${bottle(p)}</div><div><span class="pill">${T[p.t].r} · ${p.code}</span><h1 style="margin-top:8px">${p.name}</h1><div style="color:var(--honey)">${p.tag}</div><div class="price">${money(PRICE)}</div><h3>Mô tả sản phẩm</h3><p>${p.d}</p><button class="btn" onclick="add('${p.id}')">Thêm vào giỏ</button> <a class="btn o" href="#cart">Xem giỏ hàng</a></div></div>
+<div class="grid"><div class="card"><h3>Thành phần</h3><table><tr><td>Sáp ong</td><td>Nền sáp tự nhiên</td></tr><tr><td>Dầu dừa</td><td>Dưỡng ẩm, làm mềm da</td></tr><tr><td>Vitamin E</td><td>Dưỡng da</td></tr><tr><td>Tinh dầu ${p.s}</td><td>Nguyên chất</td></tr><tr><td>Khối lượng</td><td>5g / thỏi</td></tr></table><p style="font-size:13px">100% thiên nhiên – không chất bảo quản, không cồn, không phụ gia độc hại.</p></div>
+<div class="card"><h3>Cách sử dụng</h3><ol style="padding-left:18px;margin:0"><li>Mở nắp, vặn nhẹ đáy thỏi để sáp trồi lên vừa đủ.</li><li>Thoa lên vùng mạch đập: cổ tay, sau tai, cổ, dưới cằm.</li><li>Đóng chặt nắp sau khi dùng; bỏ túi để "tút" lại hương bất cứ lúc nào.</li></ol></div></div>
+<div class="card scroll"><h3>Chi tiết sản phẩm</h3><table>${rows.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join('')}</table></div>
+<h2 class="sec">Mùi hương khác cùng chủ đề</h2><div class="grid">${P.filter(x=>x.t==p.t&&x.id!=p.id).map(pcard).join('')}</div>`},
+policy:()=>`<h1>Chính sách bán hàng</h1><div class="grid">${[['Vận chuyển','Giao toàn quốc từ TP. Hồ Chí Minh. Nội thành 1–2 ngày, tỉnh khác 3–5 ngày. Miễn phí vận chuyển đơn từ 299.000đ.'],['Thanh toán','COD (nhận hàng trả tiền), chuyển khoản QR, hoặc cổng thanh toán điện tử (sandbox thử nghiệm).'],['Đổi trả','Đổi/trả trong 7 ngày nếu sản phẩm lỗi, hư hỏng khi vận chuyển hoặc giao sai mùi. Giữ nguyên hộp và chưa sử dụng.'],['Bảo quản','Tránh nhiệt độ cao và ánh nắng trực tiếp. Hạn dùng 12 tháng, dùng tốt nhất trong 6 tháng sau khi mở nắp.'],['Bảo mật','Thông tin khách hàng chỉ dùng để xử lý đơn hàng, không chia sẻ cho bên thứ ba.']].map(x=>`<div class="card"><h3>${x[0]}</h3><p style="margin:0">${x[1]}</p></div>`).join('')}</div>`,
+cart:()=>{const ids=Object.keys(cart).filter(i=>cart[i]>0);if(!ids.length)return `<h1>Giỏ hàng</h1><p>Giỏ hàng đang trống.</p><a class="btn" href="#shop">Chọn mùi hương</a>`;
+return `<h1>Giỏ hàng</h1><div class="card scroll"><table>${ids.map(i=>{const p=P.find(x=>x.id==i);return `<tr><td style="color:inherit">${p.name}</td><td class="qty"><button onclick="chg('${i}',-1)">−</button> ${cart[i]} <button onclick="chg('${i}',1)">+</button></td><td>${money(cart[i]*PRICE)}</td></tr>`}).join('')}</table><h3 style="text-align:right;margin-top:14px">Tổng: ${money(total())}</h3><div style="text-align:right"><a class="btn" href="#checkout">Thanh toán</a></div></div>`},
+checkout:()=>{if(!total())return `<h1>Thanh toán</h1><p>Giỏ hàng trống.</p>`;return `<h1>Đặt hàng & thanh toán</h1><div class="prod" style="grid-template-columns:1fr 1fr"><form class="card" onsubmit="return pay(event)"><label>Họ tên</label><input id="fn" required><label>Số điện thoại</label><input id="fp" required pattern="[0-9]{9,11}"><label>Địa chỉ giao hàng</label><textarea id="fa" required rows="2"></textarea><label>Phương thức thanh toán</label><select id="fm" onchange="$('#cd').style.display=this.value=='card'?'block':'none'"><option value="cod">COD – Nhận hàng trả tiền</option><option value="bank">Chuyển khoản ngân hàng (QR)</option><option value="card">Cổng thanh toán điện tử (Sandbox)</option></select><div id="cd" style="display:none"><label>Số thẻ test (dùng 4242 4242 4242 4242)</label><input id="fc" placeholder="4242 4242 4242 4242"><label>Hết hạn / CVC bất kỳ</label><input placeholder="12/30 · 123"></div><button class="btn" id="pb">Xác nhận đặt hàng</button><div id="pm" style="margin-top:10px"></div></form><div class="card"><h3>Đơn của bạn</h3><table>${Object.keys(cart).filter(i=>cart[i]>0).map(i=>`<tr><td style="color:inherit">${P.find(x=>x.id==i).name} × ${cart[i]}</td><td>${money(cart[i]*PRICE)}</td></tr>`).join('')}</table><h3 style="text-align:right">Tổng: ${money(total())}</h3></div></div>`},
+orders:()=>`<h1>Nhật ký đơn hàng thử nghiệm</h1><p>Đã ghi log <b style="color:var(--honey)">${orders.length}/5</b> đơn tối thiểu (chụp màn hình trang này làm minh chứng).</p><div class="card scroll">${orders.length?`<table style="font-size:13px"><tr><td>Mã đơn / Giờ</td><td>Khách</td><td>Sản phẩm</td><td>Thanh toán</td><td>Tổng</td></tr>${orders.map(o=>`<tr><td style="color:inherit"><b>${o.id}</b><br>${o.time}</td><td style="color:inherit">${o.name}<br>${o.phone}</td><td style="color:inherit">${o.items}</td><td style="color:inherit">${o.pay}<br><span class="ok">${o.st}</span></td><td style="color:inherit">${money(o.total)}</td></tr>`).join('')}</table><p><button class="btn o" onclick="if(confirm('Xóa toàn bộ log?')){orders=[];sv();render()}">Xóa log</button></p>`:'Chưa có đơn nào. Hãy thêm sản phẩm và đặt thử.'}</div>`};
+const total=()=>Object.keys(cart).reduce((s,i)=>s+(cart[i]||0)*PRICE,0);
+function add(id){cart[id]=(cart[id]||0)+1;sv();cc();location.hash='cart'}
+function chg(id,d){cart[id]=Math.max(0,(cart[id]||0)+d);sv();cc();render()}
+function cc(){$('#cc').textContent=Object.values(cart).reduce((a,b)=>a+b,0)}
+function pay(e){e.preventDefault();const m=$('#fm').value,b=$('#pb'),pm=$('#pm');
+if(m=='card'&&$('#fc').value.replace(/\s/g,'')!='4242424242424242'){pm.innerHTML='<span class="err">Sandbox: thẻ bị từ chối. Hãy dùng thẻ test 4242 4242 4242 4242.</span>';return false}
+b.disabled=true;pm.textContent=m=='card'?'Đang kết nối cổng thanh toán sandbox…':'Đang tạo đơn…';
+setTimeout(()=>{const o={id:'VH'+Date.now().toString().slice(-7),time:new Date().toLocaleString('vi-VN'),name:$('#fn').value,phone:$('#fp').value,items:Object.keys(cart).filter(i=>cart[i]>0).map(i=>`${P.find(x=>x.id==i).name} ×${cart[i]}`).join('<br>'),total:total(),pay:{cod:'COD',bank:'Chuyển khoản QR',card:'Cổng sandbox'}[m],st:m=='cod'?'Chờ giao – thu hộ':'Thanh toán thành công (sandbox)'};
+orders.unshift(o);cart={};sv();cc();$('#app').innerHTML=`<div class="card" style="text-align:center"><h1>🎉 Đặt hàng thành công</h1><p>Mã đơn <b style="color:var(--honey)">${o.id}</b> · ${o.st}</p><p>Cảm ơn bạn đã chọn VietHaze!</p><a class="btn" href="#orders">Xem nhật ký đơn</a> <a class="btn o" href="#shop">Tiếp tục mua</a></div>`},1000);return false}
+function render(){const h=(location.hash||'#home').slice(1);let html;
+if(T[h])html=V.theme(h);else if(h.startsWith('p-')&&P.find(p=>p.id==h.slice(2)))html=V.prod(P.find(p=>p.id==h.slice(2)));else html=(V[h]||V.home)();
+$('#app').innerHTML=html;cc();document.title=(T[h]?'['+T[h].code+'] '+T[h].n+' – ':'')+'VietHaze – Sáp nước hoa 3 miền'}
+addEventListener('hashchange',()=>{render();scrollTo(0,0)});render();
+/* Chatbot (rule-based, miễn phí) */
+const norm=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').toLowerCase();
+const KB=[[/ba bau|me bim|bau|nhay cam/,'Sáp VietHaze làm từ sáp ong, dầu dừa, vitamin E và tinh dầu nguyên chất, không cồn, không chất bảo quản – an toàn cho da nhạy cảm, mẹ bầu và mẹ bỉm sữa 💚'],
+[/thanh phan|nguyen lieu|organic/,'Thành phần: sáp ong, dầu dừa, vitamin E, tinh dầu nguyên chất. 100% thiên nhiên, không cồn, không phụ gia độc hại.'],
+[/gia|bao nhieu|tien/,'Mỗi thỏi 5g giá '+money(PRICE)+'. Phí ship miễn phí từ 299.000đ.'],
+[/ship|giao|van chuyen/,'Giao toàn quốc từ TP.HCM: nội thành 1–2 ngày, tỉnh khác 3–5 ngày.'],
+[/doi tra|hoan/,'Đổi/trả trong 7 ngày nếu sản phẩm lỗi hoặc giao sai mùi.'],
+[/thanh toan|cod|the|chuyen khoan/,'Bạn có thể chọn COD, chuyển khoản QR hoặc cổng thanh toán sandbox (thẻ test 4242 4242 4242 4242).'],
+[/dung|cach|thoa|luu huong|ben/,'Vặn thỏi, thoa lên cổ tay, sau tai, cổ. Lưu hương dịu 4–6 tiếng (EDP). Hạn dùng 12 tháng, 6 tháng sau khi mở nắp.'],
+[/ma vung|024|0234|028|y nghia/,'Mã sản phẩm theo mã vùng điện thoại bàn: 024 ẨM (Bắc), 0234 ẠM (Trung), 028 ÊM (Nam).'],
+[/qua|tang/,'Làm quà thì 024 Quế (ấm áp, cuốn hút) hoặc 028 Hoa Sen (dịu dàng) rất hợp. Gợi ý: <a href="#p-024-que" style="color:#842E06">Quế</a> · <a href="#p-028-sen" style="color:#842E06">Hoa Sen</a>'],
+[/que/,'Hương Quế 024 ấm nồng, cuốn hút, hợp ngày mưa lạnh &amp; hẹn hò tối. <a href="#p-024-que" style="color:#842E06">Xem →</a>'],[/nhai/,'Hương Nhài 024 thanh khiết, tinh tế. <a href="#p-024-nhai" style="color:#842E06">Xem →</a>'],
+[/tram/,'Hương Tràm Gió 0234 thảo mộc, an yên như dầu tràm của bà. <a href="#p-0234-tram" style="color:#842E06">Xem →</a>'],[/thong/,'Gỗ Thông 0234 trầm tĩnh, tối giản. <a href="#p-0234-thong" style="color:#842E06">Xem →</a>'],
+[/tao/,'Hương Táo 028 tươi mát, tràn năng lượng. <a href="#p-028-tao" style="color:#842E06">Xem →</a>'],[/sen/,'Hoa Sen 028 thanh tao, thư thái. <a href="#p-028-sen" style="color:#842E06">Xem →</a>'],
+[/met|stress|thu gian|binh yen|ngu/,'Bạn đang cần thư giãn? Thử Tràm Gió (0234) hoặc Hoa Sen (028) nhé 🌿'],[/nang dong|tuoi|tre/,'Muốn tươi mới, năng động? Hương Táo 028 sẽ hợp với bạn 🍏'],[/xin chao|chao|hello|hi$/,'Chào bạn! Mình có thể gợi ý mùi hương theo tính cách, tâm trạng hay dịp tặng quà.']];
+const chip=['Mùi nào hợp làm quà?','Mẹ bầu dùng được không?','Mã vùng nghĩa là gì?','Giá bao nhiêu?'];
+$('#cq').innerHTML=chip.map(c=>`<span onclick="say('${c}')">${c}</span>`).join('');
+function msg(t,c){$('#cm').insertAdjacentHTML('beforeend',`<p class="${c}">${t}</p>`);$('#cm').scrollTop=1e9}
+function tg(){const w=$('#cw');w.style.display=w.style.display=='block'?'none':'block';if(!$('#cm').children.length)msg('Xin chào! Mình là trợ lý VietHaze 🐝 Bạn muốn tìm mùi hương nào?','bt')}
+function say(q){msg(q.replace(/</g,'&lt;'),'us');const n=norm(q),r=KB.find(k=>k[0].test(n));setTimeout(()=>msg(r?r[1]:'Mình chưa rõ câu này. Bạn thử hỏi về mùi hương, giá, thành phần, giao hàng hoặc quà tặng nhé!','bt'),350)}
+function ask(e){e.preventDefault();const v=$('#ci').value.trim();if(v){say(v);$('#ci').value=''}return false}
+</script></body></html>
