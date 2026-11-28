@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hồ sơ nhân vật Gừng - VietHaze</title>
+<style>
+:root{--bg:#2f4a2e;--card:#f7f0e2;--ink:#2b2a22;--soft:#6b6552;--red:#B54F3D;--fur:#F1CF90;--line:#dccfb4}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,"Segoe UI",Roboto,sans-serif;padding:24px 16px 60px}
+.wrap{max-width:900px;margin:0 auto}
+h1{color:#fff;margin:0 0 4px;font-size:1.9rem}
+.sub{color:#dfe8cf;margin:0 0 22px}
+.hero{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:22px;background:var(--card);border-radius:18px;padding:20px;align-items:center}
+.hero img{width:100%;height:auto;display:block}
+.sec{background:var(--card);border-radius:16px;padding:18px 20px;margin-top:16px}
+.sec h2{margin:0 0 8px;font-size:1.15rem;color:var(--red)}
+.sec ul{margin:0;padding-left:20px}
+.sw{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.sw span{display:flex;align-items:center;gap:6px;font-size:.85rem;color:var(--soft)}
+.sw i{width:22px;height:22px;border-radius:50%;border:1px solid rgba(0,0,0,.2);display:inline-block}
+.quote{border-left:4px solid var(--red);padding:4px 12px;margin:8px 0;background:#fff8;border-radius:0 8px 8px 0}
+.warn{background:#fff1d6;border:1px solid #e6c27a}
+pre{white-space:pre-wrap;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;margin:8px 0}
+button{background:var(--red);color:#fff;border:0;border-radius:999px;padding:8px 16px;font:inherit;cursor:pointer}
+.note{font-size:.9rem;color:var(--soft);margin:6px 0 0}
+.cos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:10px}
+.cc{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;min-width:0}
+.cc h3{margin:0 0 6px;font-size:1.05rem;color:var(--red)}
+.cc .pic{aspect-ratio:2/3;background:#f3ead4;border-radius:10px;display:grid;place-items:center;overflow:hidden;margin-bottom:8px}
+.cc .pic img{width:100%;height:100%;object-fit:contain}
+.cc .pic span{font-size:.8rem;color:var(--soft);text-align:center;padding:8px}
+.cc p{margin:4px 0;font-size:.9rem}
+.cc details{margin-top:8px}
+.cc summary{cursor:pointer;font-weight:600;font-size:.9rem}
+.cc pre{font-size:12px}
+@media(max-width:760px){.cos{grid-template-columns:1fr}}
+@media(max-width:620px){.hero{grid-template-columns:1fr}.hero img{max-width:220px;margin:0 auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Gừng — nhân vật đại diện VietHaze</h1>
+<p class="sub">Hồ sơ nhân vật (Character Bible) · nhân viên trực quầy 24/7</p>
+
+<div class="hero">
+  <img src="gung.png" alt="Gừng, mèo mướp vàng đứng bằng hai chân, đeo nơ đỏ">
+  <div>
+    <p><b>Tên:</b> Gừng<br><b>Loài:</b> mèo mướp vàng, đứng bằng 2 chân như người<br><b>Vai trò:</b> nhân viên trực quầy 24/7 trên Website, Fanpage, TikTok Shop, Shopee; giúp khách chọn “Mã vùng” mùi hương.</p>
+    <p><b>Tính cách:</b> “quý ông mèo” lịch sự, tận tâm, trả lời mọi thắc mắc của khách.</p>
+  </div>
+</div>
+
+<div class="sec"><h2>Ngoại hình (giữ nguyên ở cả 3 phiên bản)</h2>
+<ul>
+<li>Phong cách hoạt hình Ghibli, nét màu nước mềm.</li>
+<li>Mèo mướp vàng cam, đứng thẳng bằng hai chân sau, quay mặt thẳng về phía người xem.</li>
+<li>Mắt xanh lá nhìn thẳng. Nơ đỏ ngay giữa cổ, không có dây đeo.</li>
+<li>Cả bốn bàn chân lông trắng như đeo “bao tay”.</li>
+</ul>
+<div class="sw">
+<span><i style="background:#F4DCB1"></i>Lông sáng #F4DCB1</span>
+<span><i style="background:#F1CF90"></i>Lông mướp #F1CF90</span>
+<span><i style="background:#B54F3D"></i>Nơ đỏ #B54F3D</span>
+<span><i style="background:#C5C8AA"></i>Mắt #C5C8AA</span>
+<span><i style="background:#FCF9F2"></i>Bàn chân #FCF9F2</span>
+<span><i style="background:#F6E4C4"></i>Bụng #F6E4C4</span>
+</div></div>
+
+<div class="sec"><h2>3 phiên bản theo mã vùng (DV13, bước 1)</h2>
+<p class="note">Một Gừng duy nhất, mỗi miền đổi trang phục và bối cảnh. Nội dung ở đây đọc từ khối <b>costumes</b> trong <b>gung.js</b>: sửa bên đó rồi tải lại trang này.</p>
+<div class="cos" id="cos"></div></div>
+
+<div class="sec"><h2>Gừng đi lại trên website</h2>
+<ul id="petlist"></ul>
+<p class="note">Cài đặt (bật/tắt, tốc độ, độ hay xuất hiện của từng hành động, câu nói) nằm ở khối <b>pet</b> trong <b>gung.js</b>.</p></div>
+
+<div class="sec"><h2>Hành động đặc trưng &amp; nhược điểm đáng yêu</h2>
+<ul>
+<li>Trước khi trò chuyện, đưa chân lên chỉnh lại chiếc nơ đỏ cho ngay ngắn.</li>
+<li>Lén lấy một thỏi sáp VietHaze 5g ra hít hà, mắt lim dim.</li>
+<li>Thích khoe họ nhà mèo mướp ở 3 miền, rồi luôn dẫn sang mùi hương từng vùng.</li>
+</ul>
+<div id="fam"></div></div>
+
+<div class="sec"><h2>Giọng nói &amp; cách xưng hô</h2>
+<ul>
+<li>Giọng con trai nhưng nghiêm túc, trưởng thành, lịch sự; nhẹ nhàng, ấm áp, tốc độ hơi chậm; không bao giờ ồn ào hay quảng cáo giật gân.</li>
+<li>Gọi khách: <b>“quý meow”</b>. Tự xưng: <b>“em”</b> hoặc <b>“Gừng”</b>. Từ đệm cuối câu: <b>“nòa”</b>.</li>
+</ul></div>
+
+<div class="sec"><h2>Câu cửa miệng</h2>
+<div id="catch"></div></div>
+
+<div class="sec"><h2>Lời chào tự động</h2>
+<div class="quote" id="greet"></div></div>
+
+<div class="sec warn"><h2>Điều Gừng không bao giờ nói</h2>
+<ul id="never"></ul>
+<p class="note"><b>Lưu ý:</b> hồ sơ gốc ghi “thuần chay (vegan)”, nhưng sáp ong là nguyên liệu từ động vật. Nếu sản phẩm có sáp ong thì không nên quảng cáo là thuần chay.</p></div>
+
+<div class="sec"><h2>Câu lệnh tạo ảnh gốc (dùng cho công cụ tạo ảnh AI)</h2>
+<pre id="pr"></pre>
+<button type="button" data-copy="pr">Sao chép</button>
+<p class="note">Mẹo giữ Gừng nhất quán: đính kèm ảnh gung.png làm ảnh tham chiếu khi tạo từng phiên bản, và luôn dán thêm câu IMPORTANT ở cuối mỗi câu lệnh.</p></div>
+</div>
+
+<script>window.GUNG_NO_UI=true;</script>
+<script src="gung.js"></script>
+<script>
+(function(){
+var G=window.Gung&&window.Gung.profile;
+if(!G){document.body.insertAdjacentHTML('afterbegin','<p style="color:#fff">Không tìm thấy gung.js cùng thư mục. Hãy đặt file này cạnh gung.js.</p>');return}
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function $(i){return document.getElementById(i)}
+
+var base=G.prompts.base,keep=G.prompts.keep;
+function spritePrompt(c){return base+' '+c.promptOutfit+' '+keep}
+function scenePrompt(c){return base.replace(/[,\s]+clean plain background\.?\s*$/,'.')+' '+c.promptOutfit+' Background: '+c.promptScene+' '+keep}
+
+$('pr').textContent=base;
+$('greet').innerHTML='Meowww... Chào mừng quý meow đã ghé thăm VietHaze nòa! <i>('+esc(G.greeting.action)+')</i> '+esc(G.greeting.text.replace(/^Meowww\.\.\. Chào mừng quý meow đã ghé thăm VietHaze nòa!\s*/,''));
+$('catch').innerHTML=G.catchphrases.map(function(t){return '<div class="quote">'+esc(t)+'</div>'}).join('');
+$('never').innerHTML=G.never.map(function(t){return '<li>'+esc(t)+'</li>'}).join('');
+$('fam').innerHTML=Object.keys(G.family).map(function(k){return '<div class="quote"><b>'+k+':</b> '+esc(G.family[k])+'</div>'}).join('');
+
+var P=G.pet,names={walk:'đi dạo',ball:'chơi banh',sleep:'ngủ',sniff:'lén hít thỏi sáp',idle:'đứng nhún'};
+$('petlist').innerHTML='<li>Trạng thái: '+(P.enabled===false?'đang <b>tắt</b>':'đang <b>bật</b>')+'; kích thước '+P.size+'px; tốc độ '+P.speed+' px/giây.</li>'+
+  '<li>Hành động và độ hay xuất hiện: '+Object.keys(P.actions).map(function(k){return (names[k]||k)+' ('+P.actions[k]+')'}).join(', ')+'.</li>'+
+  '<li>Trang chủ và các trang khác: tạo hình thường (<code>'+esc(G.defaultFile)+'</code>). Trang chủ đề: đổi trang phục như bảng trên.</li>';
+
+var cos=$('cos'),prompts=[];
+Object.keys(G.costumes).forEach(function(k){
+  var c=G.costumes[k],i1=prompts.push(spritePrompt(c))-1,i2=prompts.push(scenePrompt(c))-1;
+  cos.insertAdjacentHTML('beforeend',
+   '<div class="cc"><h3>'+k+' · '+esc(c.label)+'</h3>'+
+   '<div class="pic"><img src="'+esc(c.file)+'" alt="Gừng '+esc(c.label)+'" onerror="this.parentNode.innerHTML=\'<span>Chưa có file '+esc(c.file)+'</span>\'"></div>'+
+   '<p><b>Trang phục:</b> '+esc(c.outfit)+'</p><p><b>Bối cảnh:</b> '+esc(c.scene)+'</p><p><b>Gừng nói:</b> “'+esc(c.hello)+'”</p>'+
+   '<details><summary>Câu lệnh ảnh dùng cho web (nền trơn)</summary><pre id="p'+i1+'">'+esc(prompts[i1])+'</pre><button type="button" data-copy="p'+i1+'">Sao chép</button></details>'+
+   '<details><summary>Câu lệnh ảnh có bối cảnh (banner, Fanpage, video)</summary><pre id="p'+i2+'">'+esc(prompts[i2])+'</pre><button type="button" data-copy="p'+i2+'">Sao chép</button></details></div>');
+});
+
+document.addEventListener('click',function(e){
+  var b=e.target.closest('[data-copy]');if(!b)return;
+  var t=$(b.getAttribute('data-copy')).textContent;
+  function ok(){var o=b.textContent;b.textContent='Đã chép';setTimeout(function(){b.textContent=o},1500)}
+  if(navigator.clipboard)navigator.clipboard.writeText(t).then(ok,function(){});
+});
+})();
+</script>
+</body>
+</html>
